@@ -1,0 +1,13 @@
+$green: #3F5D45;
+$white: #eaf0ed;
+$yellow: #FFE180;
+
+$font-s: 16px;
+$font-m: 20px;
+$font-l: 24px;
+
+@mixin hide-text {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}

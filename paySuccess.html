@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>pay success</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./scss/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar" data-aos="fade-down" data-aos-once="true">
+            <a href="#" class="burger-icon">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"
+                    alt="burger-icon">
+            </a>
+        
+        
+            <div class="logo-wrap">
+                <a href="index.html">
+                    <h1 class="pc-logo">
+                        Sweetaste
+                    </h1>
+                </a>
+        
+                <a href="index.html">
+                    <h1 class="phone-logo">
+                        Sweetaste
+                    </h1>
+                </a>
+            </div>
+        
+            <div class="nav-list">
+                <ul class="menu">
+                    <li class="link"><a href="#">首頁</a></li>
+                    <li class="link"><a href="#">甜點</a></li>
+                    <li class="link"><a href="#">登入</a></li>
+                </ul>
+        
+                <a class="shopping-cart" href="#">
+                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                        alt="shopping-cart">
+                </a>
+            </div>
+        
+        </div>  
+        <!-- put something below  -->
+        <div class="pay-success-banner-wrap">
+            <div class="pay-success-banner"></div>
+            <!-- <img class="pay-success-banner" src="https://bit.ly/2P7GhNd" alt="banner"> -->
+            <div class="pay-success">
+                <ul class="icon-box">
+                    <li><i class="fas fa-check-circle"></i></li>
+                    <li><i class="decorate-line fas fa-check-circle"></i></li>
+                    <li><i class="fas fa-check-circle"></i></li>
+                </ul>
+        
+                <img src="./static/lg-付款成功.png" alt="paySuccess">
+            </div>
+        
+            <button class="continue-shopping">繼續逛逛</button>
+        </div>
+        
+        <!-- put something above  -->
+    </div>
+
+
+    <div class="inner">
+        <div class="mail-container" data-aos="fade-left" data-aos-duration="4000">
+            <div class="logo-wrap">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg"
+                    alt="logo" class="logo">
+                <p>訂閱你我的甜蜜郵件</p>
+            </div>
+    
+            <form class="mail-wrap" action="#">
+                <img class="mail-icon"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true"
+                    alt="mail-icon">
+                <input type="text">
+                <button><img
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true"
+                        alt="arrow-submit"></button>
+            </form>
+        </div>
+    
+        <div class="footer" data-aos="fade-right" data-aos-duration=400">
+            <div class="left-wrap">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
+                    alt="logo" class="logo">
+                <p class="text">
+                    07-1234-5678 <br>
+                    sweetaste@email.com 800 <br>
+                    高雄市新興區幸福路 520 號
+                </p>
+                <div class="media-box">
+                    <a href="#">
+                        <img class="a-icon"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg"
+                            alt="">
+                    </a>
+                    <a href="">
+                        <img class="fb-icon"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right-wrap">
+                <h2 class="decorate-text">吃甜點的好日子。<br>今天是個—</h2>
+                <p class="copy-right">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    
+    
+    </div>
+    <!-- icon cdn -->
+    <script src="https://kit.fontawesome.com/226a6eca39.js" crossorigin="anonymous"></script>
+    <!-- aos animation cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.burger-icon').click(function () {
+                $('.menu').toggleClass('active')
+            })
+        })
+    </script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 200, // offset (in px) from the original trigger point
+            delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 3000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+//banner start
+.banner-wrap {
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    .banner {
+        margin-top: 38px;
+        transition: .7s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:hover+.text-box {
+            transform: translate(0);
+        }
+    }
+
+    .text-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: $green;
+        padding: 20px;
+        opacity: .8;
+        width: 100%;
+        height: 150px;
+        letter-spacing: 5px;
+        background-color: $white;
+        transform: translateY(100%);
+        transition: .6s;
+
+        p {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+//banner end
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 76px;
+
+    @include pad() {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+}
+
+.slide-bar {
+    width: 30%;
+
+    @include pad() {
+        width: 100%;
+    }
+
+    h2 {
+        color: $white;
+        padding: 10px;
+        font-weight: 500;
+        font-size: $font-l;
+        padding: 16px 0 16px 0;
+    }
+
+    li {
+        border: 1px solid $white;
+        text-align: center;
+
+        &:nth-child(1) {
+            background-color: $green;
+        }
+
+        &+&:hover {
+            background-color: $white;
+        }
+
+        &:nth-child(1)>a {
+            color: $white;
+        }
+    }
+
+    a {
+        display: block;
+        font-size: $font-l;
+        color: $green;
+        padding: 16px 0 16px 0;
+    }
+
+
+}
+
+.product-wrap {
+    width: 70%;
+
+    @include pad() {
+        width: 100%;
+    }
+
+    .product-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        li {
+            width: 300px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+            @include pad() {
+                margin: 30px auto 0 auto;
+            }
+        }
+
+    }
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .today-select {
+        writing-mode: vertical-lr;
+        color: $white;
+        background-color: $green;
+        width: auto;
+        height: auto;
+        z-index: 20;
+        letter-spacing: 2px;
+        padding: 12px;
+        position: absolute;
+        top: 0;
+        left: 20px;
+
+        p {
+            font-size: $font-s;
+        }
+    }
+
+    .like {
+        position: absolute;
+        top: 19px;
+        right: 22px;
+        cursor: pointer;
+    }
+}
+
+.product-info {
+    border: .5px solid $white;
+    display: flex;
+    flex-wrap: wrap;
+
+    .text {
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .product-name {
+            width: 60%;
+            color: $green;
+            font-weight: lighter;
+            text-align: center;
+            padding: 14px 33px;
+            border-right: 1px solid $white;
+        }
+
+        .price {
+            width: 40%;
+            color: $green;
+            text-align: center;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 24px;
+        color: $green;
+        background-color: $white;
+        border: .5px solid $white;
+        padding: 16px 85px;
+        cursor: pointer;
+    }
+}
+
+.page-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 60px;
+
+    @include pad() {
+        margin: 30px 0;
+        justify-content: center;
+    }
+
+    ul {
+        border: 1px solid $white;
+        display: flex;
+    }
+
+    li {
+        font-size: 20px;
+        width: 60px;
+        border-right: 1px solid $white;
+        color: $green;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .page {
+        &:hover {
+            background-color: $green;
+            color: $white;
+        }
+
+        a {
+            display: block;
+            padding: 20px 0;
+            color: $green;
+        }
+    }
+
+    .arrow-left img,
+    .arrow-right img {
+        padding: 18px 0;
+    }
+}
