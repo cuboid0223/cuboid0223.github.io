@@ -1,5 +1,5 @@
 .container {
-  max-width: 940px;
+  max-width: 960px;
   margin: 0 auto;
 
   @include pad() {
@@ -74,12 +74,12 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     @include pad() {
       justify-content: center;
     }
     li {
-      width: 300px;
+      max-width: 300px;
       margin: 0 0 1.2em 1.2em;
 
       @include pad() {
@@ -185,11 +185,11 @@
     & > a {
       color: $green;
     }
-  }
 
-  .pageItem {
     &:hover {
       background-color: $green;
+    }
+    &:hover a {
       color: $white;
     }
   }

@@ -169,12 +169,10 @@
                         </a>
                     </li>
                 </ul>
-                
-    
             </div>
-        </div>
+        </main>
         <div class="mail-container">
-            <div class="logo-wrap">
+            <div data-aos="fade-up" class="logo-wrap">
                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg"
                     alt="logo" class="logo">
                 <p>訂閱你我的甜蜜郵件</p>
@@ -187,6 +185,7 @@
                 <input type="text">
                 <button class='sendMailButton'>
                     <img
+                    data-aos="fade-right"
                     class='sendMailIcon'
                         src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true"
                         alt="arrow-submit">
@@ -250,8 +249,8 @@
 
                 // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
                 offset: 200, // offset (in px) from the original trigger point
-                delay: 200, // values from 0 to 3000, with step 50ms
-                duration: 3000, // values from 0 to 3000, with step 50ms
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 1500, // values from 0 to 3000, with step 50ms
                 easing: 'ease', // default easing for AOS animations
                 once: true, // whether animation should happen only once - while scrolling down
                 mirror: true, // whether elements should animate out while scrolling past them
