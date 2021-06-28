@@ -179,9 +179,12 @@
     font-size: 20px;
     padding: 1em;
     border-right: 1px solid $white;
-    color: $green;
+
     text-align: center;
     transition: 0.5s;
+    & > a {
+      color: $green;
+    }
   }
 
   .pageItem {

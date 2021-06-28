@@ -764,10 +764,13 @@ img {
   font-size: 20px;
   padding: 1em;
   border-right: 1px solid #eaf0ed;
-  color: #3F5D45;
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.pageList .pageItem > a {
+  color: #3F5D45;
 }
 
 .pageList .pageItem:hover {
