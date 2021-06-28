@@ -1,0 +1,77 @@
+.footer {
+  background-color: $white;
+  padding: 2.5em 7.5em;
+  display: flex;
+  justify-content: space-between;
+  color: $green;
+
+  @include pad() {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 1.5em;
+  }
+
+  .left-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .logo {
+      width: 200px;
+      height: 30px;
+    }
+
+    .text {
+      font-size: $font-s;
+      color: $green;
+
+      @include pad() {
+        margin: 3em 0;
+      }
+    }
+
+    .media-box {
+      display: flex;
+
+      .fb-icon,
+      .a-icon {
+        display: block;
+        cursor: pointer;
+        width: 2em;
+        transition: 0.5s;
+
+        &:hover {
+          transform: translateY(-10%);
+        }
+      }
+      .fb-icon {
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  .right-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .decorate-text {
+      font-size: 20px;
+      line-height: 40px;
+      text-indent: 10px;
+      writing-mode: vertical-lr;
+      letter-spacing: 6px;
+      font-weight: 200;
+
+      @include pad() {
+        display: none;
+      }
+    }
+
+    .copy-right {
+      margin-top: 3em;
+      @include pad() {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}

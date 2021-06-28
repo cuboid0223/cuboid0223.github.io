@@ -1,0 +1,129 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+
+  @include pad() {
+    justify-content: space-around;
+  }
+  @include iphone() {
+    padding-bottom: 0.5em;
+  }
+
+  &__burgerIcon {
+    display: none;
+    @include pad() {
+      display: block;
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+
+  &__logoBox {
+    // @include pad() {
+    //   width: auto;
+    //   height: auto;
+    // }
+
+    .pc-logo,
+    .phone-logo {
+      // display: block;
+      background-size: 100% 100%;
+      cursor: pointer;
+      @include hide-text;
+    }
+
+    .pc-logo {
+      width: 13em;
+      height: 5em;
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+
+      @include pad() {
+        display: none;
+      }
+    }
+
+    .phone-logo {
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg");
+      display: none;
+
+      @include pad() {
+        display: block;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    .shoppingCartIcon {
+      margin-left: 5em;
+
+      @include pad() {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  color: $green;
+  z-index: 20;
+  align-items: center;
+
+  @include pad() {
+    display: none;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    transition: all 0.5s;
+  }
+
+  a {
+    display: block;
+    font-size: $font-s;
+    line-height: 1.5em;
+    color: $green;
+    padding: 0.5em;
+    margin-left: 5em;
+    @include pad() {
+      margin-left: 0;
+    }
+
+    &:after {
+      content: " ";
+      display: block;
+      width: 0%;
+      height: 2px;
+      margin: 5px 0px;
+      background-color: $green;
+      opacity: 0;
+      transition: 0.2s 0.5s;
+    }
+  }
+
+  .link {
+    // @include pad() {
+    //   display: block;
+    //   width: 100%;
+    // }
+
+    &:hover a:after {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
+
+.active {
+  display: block;
+}

@@ -1,9 +1,11 @@
-@import 'mixin';
-@import 'reset';
+@import "mixin";
+@import "reset";
 
-@import 'layout';
-@import 'grid';
+@import "grid";
 
-@import './page/index';
-@import './page/paySuccess';
+@import "./layout/navbar";
+@import "./layout/mail";
+@import "./layout/footer";
 
+@import "./page/index";
+@import "./page/paySuccess";
